@@ -29,6 +29,8 @@ ul{
 .item-1{
     grid-area: item-1;
     justify-self: center;
+    text-align: center;
+    border: 0;
 }
 
 .item-2{
@@ -145,4 +147,9 @@ footer a{
 
 .img-proyecto:hover{
     transform: scale(1.1);
+}
+
+.perfil{
+    
+    width: 150px;
 }
