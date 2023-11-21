@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.container-grid{
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: "item-1 item-1 item-6 item-6 item-6"
+                "item-3 item-3 item-5 item-5 item-5"
+                "item-2 item-2 item-7 item-7 item-7"
+                "item-4 item-4 item-4 item-4 item-4";
+    gap: 10px;
+    margin: 10px;
+}
+
+.grid-item{
+    padding: 20px;
+    border: 1px dashed black;
+}
+
+.item-1{
+    grid-area: item-1;
+    justify-self: center;
+}
+
+.item-2{
+    grid-area: item-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-3{
+    grid-area: item-3;
+}
+
+.item-4{
+    grid-area: item-4;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item-5{
+    grid-area: item-5;
+}
+
+.item-6{
+    grid-area: item-6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-7{
+    grid-area: item-7;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    margin: 20px;
+    border-bottom: 1px black solid;
+    width: fit-content;
+    letter-spacing: 1px;
+}
+
+li{
+    letter-spacing: .5px;
+}
+
+span{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a{
+    padding: 10px;
+}
+
+.container-grid-proyects{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: "proyect-1 proyect-2"
+                        "proyect-3 proyect-4"
+                        "proyect-5 proyect-6"
+                        "proyect-7 proyect-8";
+}
+
+.proyect-1{
+    grid-area: proyect-1;
+    border: 1px solid black;
+}
+.proyect-2{
+    grid-area: proyect-2;
+}
+.proyect-3{
+    grid-area: proyect-3;
+    border: 1px solid black;
+}
+.proyect-4{
+    grid-area: proyect-4;
+    border: 1px solid black;
+}
+.proyect-5{
+    grid-area: proyect-5;
+    border: 1px solid black;
+}
+.proyect-6{
+    grid-area: proyect-6;
+    border: 1px solid black;
+}
+.proyect-7{
+    grid-area: proyect-7;
+    border: 1px solid black;
+}
+.proyect-8{
+    grid-area: proyect-8;
+    border: 1px solid black;
+}
+
+.img-proyecto{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.img-proyecto:hover{
+    transform: scale(1.1);
+}
